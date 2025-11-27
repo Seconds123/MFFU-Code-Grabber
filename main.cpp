@@ -169,7 +169,7 @@ int main(int, char**)
             ImGui::InputText("Account ID", app_state.config.accountId, 256);
             ImGui::InputInt("Plan ID", &app_state.config.planId);
             ImGui::InputInt("Method ID", &app_state.config.method_id);
-            ImGui::InputText("CVV", app_state.config.cvv, 3);
+            ImGui::InputText("CVV", app_state.config.cvv, 4);
             ImGui::Checkbox("Reset Enabled", &app_state.config.resetEnabled);
 
             ImGui::Text("Platform Selection:");

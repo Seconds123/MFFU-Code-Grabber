@@ -27,7 +27,7 @@ struct Config {
     char selectedPlatform[64] = "Tradovate";
 
     int method_id = 0;
-    char cvv[3] = "";
+    char cvv[4] = "";
 
     char sec_ch_ua[256] = "\"Google Chrome\";v=\"140\", \"Chromium\";v=\"140\", \"Not/A)Brand\";v=\"24\"";
     char user_agent[256] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36";

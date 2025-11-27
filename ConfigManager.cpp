@@ -57,7 +57,7 @@ Config load_config() {
             config.height = j.value("height", 100);
             config.cropPercentage = j.value("cropPercentage", 0.75f);
             config.method_id = j.value("method_id", 0);
-            strncpy(config.cvv, j.value("cvv", "").c_str(), 3);
+            strncpy_s(config.cvv, j.value("cvv", "").c_str(), 4);
             config.platformSelection = j.value("platformSelection", 0);
             strncpy_s(config.selectedBrokerage, j.value("selectedBrokerage", "Tradovate").c_str(), 63);
             strncpy_s(config.selectedPlatform, j.value("selectedPlatform", "Tradovate").c_str(), 63);
